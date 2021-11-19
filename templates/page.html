@@ -6,8 +6,10 @@
 </head>
 <body>
 	<h1>Greetings!!!</h1>
-	<form>
-		<textarea cols="20" rows="5" name="Vice Versa"> default text </textarea>
+	<form action="{% url 'reverse' %}">
+		<textarea cols="20" rows="5" name="userinputtext"> default text </textarea>
+		<br><br>
+		<input type="submit" value="Reverse" name="someName">
 
 	</form>
 
